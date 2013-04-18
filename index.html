@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Neo4j Newsflash - meetup munich</title>
+
+    <meta name="description" content="What happend in Neo4j since last meetup">
+    <meta name="author" content="Stefan Armbruster">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+        <h1>neo4j newsflash</h1>
+        <p>Stefan Armbruster</p>
+        <p>e: stefan.armbruster@neotechnology.com</p>
+        <p>t: darthvader42</p>
+        </section>
+
+        <!--#include file="dummy.html" -->
+
+        <section>
+        <h2>Graph Databases - the book, free download</h2>
+        <div>
+          <a href="http://www.graphdatabases.com"><img src="graphdatabases_v31.png"/></a>
+        </div>
+        <a href="http://www.graphdatabases.com">http://www.graphdatabases.com</a>
+        </section>
+
+        <section>
+        <h2>redesign of http://www.neo4j.org</h2>
+        <div>
+          <a href="http://blog.neo4j.org/2013/03/neo4jorg-30-launch.html"><img src="neo4j.org.png"/></a>
+        </div>
+        <a href="http://blog.neo4j.org/2013/03/neo4jorg-30-launch.html">http://www.neo4j.org</a></h2>
+        </section>
+
+        <section>
+          <h2>Heroku offering: "try" plan</h2>
+          <div>
+            <ul>
+              <li>"test" plan deprecated</li>
+              <li>"try" plan is and remains free</li>
+              <li>work is ongoing</li>
+            </ul>
+          </div>
+          <a href="http://blog.neo4j.org/2013/04/heroku-addon-news-new-try-plan.html">http://blog.neo4j.org/2013/04/heroku-addon-news-new-try-plan.html</a></h2>
+          </section>
+
+        <section>
+        <h2>1.9.M05 & 1.9.RC1</h2>
+        <div>
+            <ul>
+            <li>no more Zookeeper in HA -&gt; easier config</li>
+            <li>HA: support for port ranges</li>
+            <li>HA: add node on the fly</li>
+            <li>/db/manage/server/ha/[getMaster|isMaster]</li>
+            <li>64k relationship types</li>
+            <li>gremlin as seperate plugin</li>
+            <li>REST batch operations way faster</li>
+            <li>Cypher improvements from 1.8.1 (and more)</li>
+          </ul>
+          <div style="text-align: left;">References:</div>
+        </div>
+        <pre><a href="http://blog.neo4j.org/2013/04/almost-there-neo4j-19rc1.html">http://blog.neo4j.org/2013/04/almost-there-neo4j-19rc1.html</a></pre>
+        </section>
+        <section>
+        <h2>Euler's birthday</h2>
+        <div>
+          <ul>
+            <li>Mar 15th is Euler's birthday</li>
+            <li>Nice Google doodle<li>
+          </ul>
+        </div>
+        <div><img src="google.png"></div>
+        </section>
+        <section>
+        <h2>Neo4j 2.0.M01 released</h2>
+        </section>
+
+        <section>
+        <h2>Events & Community</h2>
+        <ul>
+          <li>Twitter: @Neo4jDE, @Neo4j</li>
+          <li>Tutorials:
+          <ul>
+            <li>19.05, 15:00 Webinar Hardwaresizing</li>
+            <li>22.04 - 26.04. Jax, Mainz</li>
+            <li>26.04 - 27.04. NoSQL Matters, Köln</li>
+            <li>16.05. NoSQL Roadshow Berlin</li>
+            <li>16.05. Neo4j Tutorial Frankfurt</li>
+            <li>21.05. Neo4j Tutorial Stockholm</li>
+            <li>28.05. Neo4j Tutorial Amsterdam</li>
+            <li>06.06. Neo4j Tutorial München</li>
+            <li>12.06. Neo4j Tutorial Zürich</li>
+            <li>16.05. NoSQL Roadshow Kopenhagen</li>
+          </ul>
+          </li>
+        </ul>
+        </section>
+        <section>
+        <h2>habe fertig</h2>
+        </section>
+      </div>
+
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
